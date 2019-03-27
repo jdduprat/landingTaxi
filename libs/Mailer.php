@@ -13,10 +13,10 @@ class Mailer
 
 		if( defined('SMTP_HOST') && defined('SMTP_USERNAME') && defined('SMTP_PASSWORD') && defined('SMTP_PORT')) {
 			if (!empty(DB_HOSTNAME) || !empty(SMTP_USERNAME) || !empty(SMTP_PASSWORD) || !empty(SMTP_PORT) ) {
-				$this->mail->Host = 'mail.c1510556.ferozo.com';
+				$this->mail->Host = HOST;
 				$this->mail->SMTPAuth = true;
-				$this->mail->Username = 'info@systaxi.site';
-				$this->mail->Password = 'R3t4x1d3v';
+				$this->mail->Username = MAIL;
+				$this->mail->Password = PASS;
 				$this->mail->SMTPSecure = 'tls';
 				$this->mail->Port = 25;
 			}
