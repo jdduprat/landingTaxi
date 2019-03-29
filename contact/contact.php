@@ -32,7 +32,6 @@ if(!$error)
     ."X-Mailer: PHP/" . phpversion());
 */
     //doy las gracias por el envío
-    echo  "Gracias por rellenar el formulario. Se ha enviado correctamente."; 
 	$mailer = new Mailer();
 	$mailer->mail->setFrom(WEBMASTER_EMAIL, $name);
 	$mailer->mail->addAddress('info@systaxi.site', 'systaxi');
